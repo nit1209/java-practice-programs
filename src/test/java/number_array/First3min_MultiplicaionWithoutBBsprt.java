@@ -1,6 +1,6 @@
 package number_array;
 
-import java.util.Iterator;
+
 
 public class First3min_MultiplicaionWithoutBBsprt {
 
