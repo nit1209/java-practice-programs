@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="mock.Sel_grid_local">
+      <class name="others.MakemyTrip_OneWay">
         <methods>
           <include name="m1"/>
         </methods>
-      </class> <!-- mock.Sel_grid_local -->
+      </class> <!-- others.MakemyTrip_OneWay -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
