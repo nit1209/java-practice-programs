@@ -16,11 +16,13 @@ public class C3 {
 					rev=rev+s.charAt(i);
 				}
 			}
+			System.out.println(rev);
 			for(int i=0;i<s.length();i++)
 			{
 				if(s.charAt(i)==' ')
 				{
 					rev=rev.substring(0,i)+" "+rev.substring(i, rev.length());
+						//m 
 				}
 			}
 			System.out.println(rev);

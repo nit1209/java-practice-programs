@@ -5,7 +5,7 @@ import java.util.LinkedHashSet;
 public class C4 {
 
 	public static void main(String[] args) {
-	String s= " my name is rishav it contains ri and shav";
+	String s= "my name is rishav it contains ri and shav";
 	int count=0;
 	LinkedHashSet<Character> set =new LinkedHashSet<Character>();
 	
@@ -26,7 +26,7 @@ public class C4 {
 			}
 			
 		}
-		System.out.println("occurence of "+c+" in string is "+count) ;
+		System.out.println(c+" "+count) ;
 	}
 	
 	
