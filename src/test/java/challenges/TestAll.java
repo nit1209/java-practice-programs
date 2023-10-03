@@ -1,7 +1,16 @@
 package challenges;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.*;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 
 public class TestAll {
@@ -158,5 +167,63 @@ public class TestAll {
 		System.out.println(set);
 	}
 	
-
+	@Test
+	public void SortZeroToFirstAndLast()
+	{
+		Integer a[]= {5,0,2,0,3,0};
+		Arrays.sort(a);
+		System.out.println(Arrays.toString(a));
+		//here collections reverse order will take the objects as input so we Declared a[] as Integer not int.
+		Arrays.sort(a,Collections.reverseOrder());
+		System.out.println(Arrays.toString(a));
+	}
+	
+	@Test
+	public void ExctractOnlyDateInString()
+	{
+		String str="my birthday is on 12-09-2020 nyc day";
+		System.out.println(str.replaceAll("[a-zA-Z ]",""));
+	}
+	
+	@Test
+	public void removeDuplicateCharacterInString_1()
+	{
+		String s="kannada";
+		String s2="";
+		for(int i=0; i<s.length(); i++)
+		{
+			if(s2.indexOf(s.charAt(i))==-1)
+			{
+				s2=s2+s.charAt(i);
+			}
+		}
+		System.out.println("Method-2 Ans:- "+s2);
+	}
+	
+	@Test
+	public void removeDuplicateCharacterInString_2()
+	{
+		String s="kannada";
+		LinkedHashSet<Character> set = new LinkedHashSet<Character>();
+		for(int i=0; i<s.length(); i++)
+		{
+			set.add(s.charAt(i));
+		}
+		
+		String s1="";
+		for(Character cha:set)
+		{
+			s1+=cha;
+		}
+		System.out.println(s1);
+	}
+	
+	@Test
+	public void TakeScreenShot() throws Exception, IOException
+	{
+		WebDriver driver = new ChromeDriver(new ChromeOptions().addArguments("--remote-allow-origins=*"));
+		driver.get("https://www.google.com");
+		FileUtils.copyFile(((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE), new File("./screenshot-sel/test.png"));
+		driver.quit();
+	}
 }

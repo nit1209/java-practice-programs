@@ -5,7 +5,7 @@
     <classes>
       <class name="challenges.TestAll">
         <methods>
-          <include name="test2"/>
+          <include name="TakeScreenShot"/>
         </methods>
       </class> <!-- challenges.TestAll -->
     </classes>

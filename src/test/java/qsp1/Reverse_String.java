@@ -27,8 +27,8 @@ public class Reverse_String {
 		
 		//METHOD-4 --using String builder
 		System.out.println();
-		StringBuilder build = new StringBuilder("software");
-		System.out.println(build.reverse());
+		String S1 = new StringBuilder("software").reverse().toString();
+		System.out.println(S1); 
 	}
 
 }
