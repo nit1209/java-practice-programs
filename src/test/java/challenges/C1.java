@@ -2,9 +2,14 @@ package challenges;
 
 import java.util.LinkedHashSet;
 
+import org.testng.annotations.Test;
+
+
 public class C1 {
 
-	public static void main(String[] args) {
+	@Test
+	public void charCount1()
+	{
 		// i/p :- aaabbcdddf		o/p:- a3b2c1d3f1
 
 		String s="aaabbcdddf";
@@ -24,9 +29,8 @@ public class C1 {
 				}
 			}
 			System.out.print(ch+""+count);
-			
 		}
-		
+		System.out.println();
 	}
 
 }
