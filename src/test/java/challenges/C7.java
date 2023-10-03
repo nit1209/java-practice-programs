@@ -24,10 +24,12 @@ public class C7 {
 					count++;
 				}
 			}
-			System.out.print(character+""+count+":");
+			 System.out.print(character + "" + count);
+			 if (character != set.toArray()[set.size() - 1]) {
+			        System.out.print(":");
 		}
-		
-		
 	}
+}
+
 
 }
