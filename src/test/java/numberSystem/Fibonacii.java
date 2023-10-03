@@ -11,8 +11,6 @@ public class Fibonacii {
 				a=b;
 				b=sum;
 				sum=a+b;
-			
-			
 			}
 		}
 

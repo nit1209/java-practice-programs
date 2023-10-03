@@ -1,6 +1,6 @@
 package qsp1;
 
-import java.util.ArrayList;
+import java.util.*;
 
 public class Del_duplicate_char_String_WO_Collection {
 

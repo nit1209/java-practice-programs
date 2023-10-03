@@ -8,7 +8,7 @@ public class UsingMapOccurenceOfWord {
 	public static void main(String[] args) {
 		String s= "syed syed naseer basheer pasha pasha";
 		String[] st=s.split(" ");
-		method1(st);
+//		method1(st);
 		method2(st);
 		
 	}
