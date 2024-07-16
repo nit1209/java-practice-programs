@@ -1,6 +1,7 @@
 package interview;
 
 import java.util.HashMap;
+import java.util.Map.Entry;
 
 public class Dummy {
 
@@ -40,5 +41,13 @@ public class Dummy {
 			
 		}
 		System.out.println(map);
+		
+		for (Entry<String, Integer> entry : map.entrySet()) {
+			String key = entry.getKey(); 
+			int val=entry.getValue();
+		if(val>1)
+			System.out.println(key+" "+val);
+			
+		}
 }
 }

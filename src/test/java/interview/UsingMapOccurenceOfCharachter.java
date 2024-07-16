@@ -29,35 +29,35 @@ public class UsingMapOccurenceOfCharachter {
 			}
 
 		}
-System.out.println(map);
-for(Entry<Character,Integer> en:map.entrySet())
-{
-	if(en.getValue()>1)
-	{
-		System.out.println(en.getKey()+" "+en.getValue());
-	}
-}
+		System.out.println(map);
+		for(Entry<Character,Integer> en:map.entrySet())
+		{
+			if(en.getValue()>1)
+			{
+				System.out.println(en.getKey()+" "+en.getValue());
+			}
+		}
 
-/*		Set<Entry<Character,Integer>>se = map.entrySet();
+		/*		Set<Entry<Character,Integer>se = map.entrySet();
 		for(Entry<Character,Integer> each:se)
 		{
 			System.out.println(each);
 		}
-		
+
 		//only keys printing
 		Set<Character>onlykeys=map.keySet();
 		for(Character ok:onlykeys)
 		{
 			System.out.println(ok);
 		}
-		
+
 		//only values printing
 	Collection<Integer> onlyvalues = map.values();
 		for(Integer ov:onlyvalues)
 		{
 			System.out.println(ov);
 		}	*/
-		
+
 	}
 
 }

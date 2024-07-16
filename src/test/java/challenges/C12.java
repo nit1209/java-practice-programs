@@ -5,7 +5,7 @@ package challenges;
 public class C12 {
 
 	public static void main(String[] args) {
-		// "i love programming"		reverse and split "i"
+		// "i love programming"		reverse and split 
 
 		String s= "i love programming";
 		String revs="";

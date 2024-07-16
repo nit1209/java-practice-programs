@@ -15,7 +15,7 @@ public class C16 {
 		System.out.println("enter the key 3: to switch the 3rd and 3rd last value");
 		System.out.println("Enter the Key here :- ");
 		int key = sc.nextInt();
-		int temp=0,temp1=0;
+		int temp=0;
 		switch (key) {
 		case 1:	
 		
